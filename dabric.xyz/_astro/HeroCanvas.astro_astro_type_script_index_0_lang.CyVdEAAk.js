@@ -94,12 +94,8 @@ const ht = async s => {
         d = !1
     }
     const E = new R(0, 0, await G(lt.src)),
-        u = [new R(6, 2, await L(p(() =>
-            import ("./hand.brMKfsTZ.js"), []))), new R(4, 7, await L(p(() =>
-            import ("./text.LrxukypT.js"), []))), new R(8, 8, await L(p(() =>
-            import ("./no.CDDEYSvk.js"), []))), new R(10, 4, await L(p(() =>
-            import ("./alt.DG8vdzw0.js"), []))), new R(7, 7, await L(p(() =>
-            import ("./nwse.DbVHZ1JA.js"), [])))];
+        [h, tx, no, alt, nw] = await Promise.all([L(p(() => import("./hand.brMKfsTZ.js"), [])), L(p(() => import("./text.LrxukypT.js"), [])), L(p(() => import("./no.CDDEYSvk.js"), [])), L(p(() => import("./alt.DG8vdzw0.js"), [])), L(p(() => import("./nwse.DbVHZ1JA.js"), []))]),
+        u = [new R(6, 2, h), new R(4, 7, tx), new R(8, 8, no), new R(10, 4, alt), new R(7, 7, nw)];
     class c {
         static get y() {
             return (C - Q) / f
@@ -116,7 +112,7 @@ const ht = async s => {
         waveyX = 0;
         waveyY = 0;
         waveyZ = 0;
-        randomDelay = Math.random() * 500;
+        randomDelay = Math.random() * 80;
         velocityX = 0;
         velocityY = 0;
         velocityZ = 0;
